@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import ToDoList from "./ToDoList"; 
-
+import { BrowserRouter } from "react-router-dom";
+import Header from './components/Header'
 ReactDOM.render(
-  <ToDoList/>,
+  <BrowserRouter>
+  <Header/>
+    <App/>
+  </BrowserRouter>,
+  
   document.getElementById('root')
 );
 
