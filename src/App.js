@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+import Navbar from './components/Navbar';
+import MovieList from './components/MovieList';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Sherdil</h1>
+      <Navbar/> 
+      <MovieList/>
     </div>
   );
 }
